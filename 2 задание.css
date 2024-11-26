@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 1000px;
+    width: 1920px;
     background-color: #0c73fe;
     color: #333;
 }
 
-.header {
+header {
     background-color: #0c73fe;
     color: #fff;
     padding: 10px 20px;
@@ -20,7 +22,7 @@ body {
     font-weight: bold;
 }
 
-.header nav ul {
+header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -28,16 +30,16 @@ body {
     gap: 15px;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline;
 }
 
-.header nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-.main {
+main {
     padding: 20px;
 }
 
@@ -93,7 +95,7 @@ body {
     background-color: #0056b3;
 }
 
-.footer {
+footer {
     text-align: center;
     padding: 10px;
     background: #0c73fe;

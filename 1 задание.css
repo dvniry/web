@@ -45,6 +45,10 @@ body {
     top: 0;
     width: 32px;
   }
+
+  .button__one {
+    left: 0;
+  }
   
   .button__two {
     left: 48px;
@@ -53,4 +57,19 @@ body {
   .button__three {
     left: 96px;
   }
+
+  /* Стили при наведении на первую кнопку */
+.button__one:hover ~ .bulb:nth-of-type(3n+1) {
+    background-color: red;
+}
+
+/* Стили при наведении на вторую кнопку */
+.button__two:hover ~ .bulb:nth-of-type(3n+2) {
+    background-color: blue;
+}
+
+/* Стили при наведении на третью кнопку */
+.button__three:hover ~ .bulb:nth-of-type(3n+3) {
+    background-color: green;
+}
   

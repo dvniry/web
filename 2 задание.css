@@ -2,10 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 1000px;
-    width: 1920px;
     background-color: #0c73fe;
     color: #333;
+    overflow-x: hidden; 
 }
 
 header {
@@ -44,7 +43,9 @@ main {
 }
 
 .search-container {
-    max-width: 800px;
+    max-width: 60%;
+    height: 60%;
+    box-sizing: border-box;
     margin: 50px auto;
     background: white;
     padding: 20px;
@@ -58,15 +59,15 @@ main {
     color: #007bff;
 }
 
-.search-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+.form-group {
+    flex-direction: column;
 }
 
-.form-group {
+.search-form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2px;
 }
 
 .form-group label {
@@ -78,6 +79,7 @@ main {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 80%;
 }
 
 .search-button {
@@ -89,7 +91,24 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
+    text-align: center;
 }
+
+@media (max-width: 768px) {
+
+    .search-container{
+        grid-column: 2fr;
+    }
+
+    .search-form {
+        grid-template-columns: 2fr; /* Перестраиваем элементы в одну колонку */
+    }
+
+    .search-button {
+        grid-column: span 2; /* Кнопка занимает всю ширину */
+    }
+}
+
 
 .search-button:hover {
     background-color: #0056b3;

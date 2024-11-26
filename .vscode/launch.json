@@ -10,5 +10,11 @@
             "name": "1 задание.html",
             "file": "${env:FILE_PATH}1 задание.html"
         },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "2 задание.html",
+            "file": "${env:FILE_PATH}2 задание.html"
+        },
     ]
 }

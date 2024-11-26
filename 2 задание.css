@@ -43,7 +43,7 @@ main {
 }
 
 .search-container {
-    max-width: 60%;
+    max-width: 1200px;
     height: 60%;
     box-sizing: border-box;
     margin: 50px auto;
@@ -61,6 +61,7 @@ main {
 
 .form-group {
     flex-direction: column;
+    gap: 0 2px;
 }
 
 .search-form {
@@ -68,22 +69,18 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2px;
-}
-
-.form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
+    width: 100%;
 }
 
 .form-group input, .form-group select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
 }
 
 .search-button {
-    grid-column: span 2;
+    grid-column: span 1;
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -101,11 +98,11 @@ main {
     }
 
     .search-form {
-        grid-template-columns: 2fr; /* Перестраиваем элементы в одну колонку */
+        grid-template-columns: 2fr; 
     }
 
     .search-button {
-        grid-column: span 2; /* Кнопка занимает всю ширину */
+        grid-column: span 2;
     }
 }
 

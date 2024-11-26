@@ -28,12 +28,10 @@
                     <input type="text" id="to" placeholder="Куда">
                 </div>
                 <div class="form-group">
-                    <label for="departure-date">Дата отправления</label>
-                    <input type="text" id="departure-date" placeholder="когда">
+                    <input type="date" id="departure-date" placeholder="когда">
                 </div>
                 <div class="form-group">
-                    <label for="return-date">Дата возвращения</label>
-                    <input type="text" id="return-date" placeholder="обратно">
+                    <input type="date" id="return-date" placeholder="обратно">
                 </div>
                 <div class="form-group">
                     <select id="passengers">
@@ -53,6 +51,7 @@
                 <button type="submit" class="search-button">Найти билеты</button>
             </form>
         </section>
+        <div id="calendar" style="display: none;"></div>
     </main>
     <footer>
         <p>&copy; 2024 Авиабилеты. Все права защищены.</p>

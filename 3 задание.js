@@ -5,16 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedStartDate = null;
     let selectedEndDate = null;
 
-    // Открытие/закрытие календаря
     dateInput.addEventListener('click', () => {
         calendar.style.display = calendar.style.display === 'none' ? 'block' : 'none';
     });
 
-    // Генерация календаря
     function generateCalendar(year, month) {
         calendar.innerHTML = '';
 
-        // Заголовок с переключателями
         const header = document.createElement('div');
         header.className = 'calendar-header';
         const prevButton = document.createElement('button');
@@ -41,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         calendar.appendChild(header);
 
-        // Дни недели
         const days = document.createElement('div');
         days.className = 'calendar-days';
 
@@ -52,16 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
             days.appendChild(dayElem);
         });
 
-        // Дни месяца
         const firstDay = new Date(year, month, 1).getDay();
         const lastDate = new Date(year, month + 1, 0).getDate();
 
-        // Сдвиг для первого дня
         for (let i = 1; i < (firstDay === 0 ? 7 : firstDay); i++) {
             days.appendChild(document.createElement('div'));
         }
 
-        // Генерация дней месяца
         for (let date = 1; date <= lastDate; date++) {
             const dayElem = document.createElement('div');
             dayElem.textContent = date;
@@ -97,14 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
         calendar.appendChild(days);
     }
 
-    // Форматирование даты
     function formatDate(date) {
         return `${date.getDate().toString().padStart(2, '0')}.${(date.getMonth() + 1)
             .toString()
             .padStart(2, '0')}.${date.getFullYear()}`;
     }
 
-    // Обновление выделенных дат
     function updateSelectedDates() {
         const dayElements = document.querySelectorAll('.calendar-days div');
         dayElements.forEach(day => {

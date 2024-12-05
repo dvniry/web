@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-календарь</title>
+    <link rel="stylesheet" href="3 задание.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Авиабилеты</div>
+        <nav>
+            <ul>
+                <li><a href="#">Профиль</a></li>
+                <li><a href="#">Поддержка</a></li>
+                <li><a href="#">RUB</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-container">
+            <h1>Найди дешёвые авиабилеты</h1>
+            <form class="search-form">
+                <div class="form-group">
+                    <input type="text" id="from" placeholder="Откуда">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="to" placeholder="Куда">
+                </div>
+                <div class="form-group">
+                    <input type="date" id="departure-date" placeholder="когда">
+                </div>
+                <div class="form-group">
+                    <input type="date" id="return-date" placeholder="обратно">
+                </div>
+                <div class="form-group">
+                    <select id="passengers">
+                        <option value="1">1 пассажир</option>
+                        <option value="2">2 пассажира</option>
+                        <option value="3">3 пассажира</option>
+                        <option value="4">4 пассажира</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="class">
+                        <option value="economy">Эконом</option>
+                        <option value="business">Бизнес</option>
+                        <option value="first">Первый</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-button">Найти билеты</button>
+            </form>
+        </section>
+        <div id="calendar" style="display: none;"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Авиабилеты. Все права защищены.</p>
+    </footer>
+    <script src="3 задание.js"></script>
+</body>
+</html>
+    

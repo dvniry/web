@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Веб-календарь</title>
-    <link rel="stylesheet" href="2 задание.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Авиабилеты</div>
-        <nav>
-            <ul>
-                <li><a href="#">Профиль</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">RUB</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="search-container">
-            <h1>Найди дешёвые авиабилеты</h1>
-            <form class="search-form">
-                <div class="form-group">
-                    <input type="text" id="from" placeholder="Откуда">
-                </div>
-                <div class="form-group">
-                    <input type="text" id="to" placeholder="Куда">
-                </div>
-                <div class="form-group">
-                    <input type="date" id="departure-date" placeholder="когда">
-                </div>
-                <div class="form-group">
-                    <input type="date" id="return-date" placeholder="обратно">
-                </div>
-                <div class="form-group">
-                    <select id="passengers">
-                        <option value="1">1 пассажир</option>
-                        <option value="2">2 пассажира</option>
-                        <option value="3">3 пассажира</option>
-                        <option value="4">4 пассажира</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select id="class">
-                        <option value="economy">Эконом</option>
-                        <option value="business">Бизнес</option>
-                        <option value="first">Первый</option>
-                    </select>
-                </div>
-                <button type="submit" class="search-button">Найти билеты</button>
-            </form>
-        </section>
-        <div id="calendar" style="display: none;"></div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Авиабилеты. Все права защищены.</p>
-    </footer>
-    <script src="2 задание.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Задание на hth-селектор</title>
+    <link rel="stylesheet" type="text/css" href="2 задание.css" />
+  </head>
+
+  <body>
+    <div class="marquee">
+      <button class="button button__one">1</button>
+      <button class="button button__two">2</button>
+      <button class="button button__three">3</button>
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+      <div class="bulb"></div>
+      <div class="bulb" style="grid-column: 7; grid-row: 2"></div>
+      <div class="bulb" style="grid-column: 7; grid-row: 3"></div>
+      <div class="bulb" style="grid-column: 7; grid-row: 4"></div>
+      <div class="bulb" style="grid-column: 7; grid-row: 5"></div>
+      <div class="bulb" style="grid-column: 7; grid-row: 6"></div>
+      <div class="bulb" style="grid-column: 7; grid-row: 7"></div>
+      <div class="bulb" style="grid-column: 6; grid-row: 7"></div>
+      <div class="bulb" style="grid-column: 5; grid-row: 7"></div>
+      <div class="bulb" style="grid-column: 4; grid-row: 7"></div>
+      <div class="bulb" style="grid-column: 3; grid-row: 7"></div>
+      <div class="bulb" style="grid-column: 2; grid-row: 7"></div>
+      <div class="bulb" style="grid-column: 1; grid-row: 7"></div>
+      <div class="bulb" style="grid-column: 1; grid-row: 6"></div>
+      <div class="bulb" style="grid-column: 1; grid-row: 5"></div>
+      <div class="bulb" style="grid-column: 1; grid-row: 4"></div>
+      <div class="bulb" style="grid-column: 1; grid-row: 3"></div>
+      <div class="bulb" style="grid-column: 1; grid-row: 2"></div>
+    </div>
+  </body>
 </html>
